@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">DreamHome. <span>G.CHAKRADHAR</span></div>
+        <div class="nav-links"><a href="index.html">Back to Home</a></div>
+    </nav>
+
+    <div id="loading" class="loading">Loading...</div>
+
+    <div class="details-layout" id="content" class="hidden">
+        <div class="left-content">
+            <img id="propImage" class="main-image" alt="Property image">
+            <div class="property-details-section">
+                <span class="badge badge-static">FOR SALE</span>
+                <h1 id="propTitle" class="prop-title"></h1>
+                <h2 id="propPrice" class="prop-price"></h2>
+                <p id="propAddress" class="prop-address"><i class="fa-solid fa-location-dot"></i> <span></span></p>
+                
+                <div class="stats-row">
+                    <div class="stat-item"><i class="fa-solid fa-bed"></i> <span id="propBeds"></span> Beds</div>
+                    <div class="stat-item"><i class="fa-solid fa-bath"></i> <span id="propBaths"></span> Baths</div>
+                    <div class="stat-item"><i class="fa-solid fa-ruler-combined"></i> <span id="propSqft"></span> Sq Ft</div>
+                    <div class="stat-item"><i class="fa-regular fa-calendar"></i> <span id="propYear"></span> Built</div>
+                </div>
+
+                <h3 class="section-heading">Description</h3>
+                <p id="propDesc" class="prop-description"></p>
+
+                <h3 class="section-heading">Amenities</h3>
+                <div id="amenitiesGrid" class="amenities-grid"></div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-card">
+                <h3 class="sidebar-heading">Contact Agent</h3>
+                <div class="agent-info">
+                    <img id="agentImage" class="agent-image" alt="Agent profile picture">
+                    <div>
+                        <h4 id="agentName" class="agent-name"></h4>
+                        <span class="agent-title">Senior Broker</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <textarea rows="4" placeholder="I am interested..."></textarea>
+                    <button type="button" class="btn-search btn-contact-form">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col"><h3>DreamHome.</h3><p>Luxury Real Estate.</p></div>
+            <div class="footer-col"><h3>Quick Links</h3><ul><li><a href="#">Properties</a></li></ul></div>
+            <div class="footer-col"><h3>Legal</h3><ul><li><a href="#">Privacy</a></li></ul></div>
+            <div class="footer-col"><h3>Contact</h3><ul><li>(555) 123-4567</li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 DreamHome. Designed by <span class="designer-name">G.CHAKRADHAR</span></p></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'http://10.138.22.181:5000/api';
 
 document.addEventListener("DOMContentLoaded", () => {
     // Check Login
@@ -92,4 +92,5 @@ async function loadDetails() {
         document.getElementById('loading').style.display = 'none';
         document.getElementById('content').style.display = 'grid';
     } catch(e) { console.error(e); }
+
 }

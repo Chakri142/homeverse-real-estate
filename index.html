@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHome | G.CHAKRADHAR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">DreamHome. <span>G.CHAKRADHAR</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">Properties</a>
+            <a href="#" id="loginBtn" class="btn-login" onclick="document.getElementById('loginModal').style.display='flex'">Login</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Find Your Royal Estate</h1>
+        
+        <div class="search-container">
+            <div class="search-field search-field-large">
+                <label>Location</label>
+                <input type="text" id="searchInput" placeholder="City, Zip...">
+            </div>
+            <div class="search-field">
+                <label>Type</label>
+                <select id="searchType" title="Property type">
+                    <option value="All">All Types</option>
+                    <option value="Villa">Villa</option>
+                    <option value="Penthouse">Penthouse</option>
+                    <option value="Mansion">Mansion</option>
+                    <option value="Estate">Estate</option>
+                </select>
+            </div>
+            <div class="search-field">
+                <label>Min Price</label>
+                <input type="number" id="minPrice" placeholder="$ Min">
+            </div>
+            <div class="search-field">
+                <label>Max Price</label>
+                <input type="number" id="maxPrice" placeholder="$ Max">
+            </div>
+            <button class="btn-search" onclick="loadProperties()">Search</button>
+        </div>
+    </header>
+
+    <div class="listings-container">
+        <h2 class="collection-title">Exclusive Collection</h2>
+        <div id="propertyGrid" class="property-grid">
+            <p class="loading-text">Loading...</p>
+        </div>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span onclick="document.getElementById('loginModal').style.display='none'" class="close">&times;</span>
+            <h2 class="modal-title">Member Login</h2>
+            <input type="text" id="username" placeholder="Username" class="modal-input">
+            <button onclick="login()" class="modal-button">Enter</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col"><h3>DreamHome.</h3><p>Luxury Real Estate.</p></div>
+            <div class="footer-col"><h3>Quick Links</h3><ul><li><a href="#">Properties</a></li><li><a href="#">Agents</a></li></ul></div>
+            <div class="footer-col"><h3>Legal</h3><ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></div>
+            <div class="footer-col"><h3>Contact</h3><ul><li>(555) 123-4567</li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 DreamHome. Designed by <span class="designer-name">G.CHAKRADHAR</span></p></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

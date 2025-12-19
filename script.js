@@ -1,5 +1,5 @@
-const API_URL = 'http://10.138.22.181:5000/api';
-
+// FORCE API TO LOCALHOST 5000
+const API_URL = 'http://localhost:5000/api';
 document.addEventListener("DOMContentLoaded", () => {
     // Check Login
     const user = JSON.parse(localStorage.getItem('user'));
@@ -94,3 +94,4 @@ async function loadDetails() {
     } catch(e) { console.error(e); }
 
 }
+

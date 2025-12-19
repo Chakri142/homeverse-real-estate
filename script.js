@@ -1,4 +1,5 @@
-// FORCE API TO LOCALHOST 5000
+// CONFIGURATION
+// IMPORTANT: For mobile testing, change 'localhost' to your computer's IP (e.g., 'http://192.168.1.15:5000/api')
 const API_URL = 'http://localhost:5000/api';
 document.addEventListener("DOMContentLoaded", () => {
     // Check Login
@@ -94,4 +95,5 @@ async function loadDetails() {
     } catch(e) { console.error(e); }
 
 }
+
 
